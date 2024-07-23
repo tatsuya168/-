@@ -1,53 +1,50 @@
 /* Reset default margin and padding */
-body, h1, h2, p, ol, li, img {
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, figure, figcaption, blockquote {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling */
+/* Set max width for main content */
 body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
-    padding: 20px;
 }
 
-h1, h2 {
-    color: #333;
+/* Style headings */
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
     margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    background-color: #fff;
 }
 
+/* Style paragraphs */
 p {
     margin-bottom: 15px;
 }
 
+/* Style ordered list */
 ol {
+    list-style-type: decimal;
     margin-bottom: 15px;
-    padding-left: 20px;
 }
 
+/* Style list items */
 li {
     margin-bottom: 5px;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/* Style images */
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
